@@ -11,7 +11,7 @@ driver.get("https://vk.com/")
 login_field = driver.find_element_by_xpath("//*[@id=\"index_email\"]")
 password_field = driver.find_element_by_xpath("//*[@id=\"index_pass\"]")
 loginButton = driver.find_element_by_xpath("//*[@id=\"index_login_button\"]")
-login, password = open('logpass1.txt').readlines()
+login, password = open('logpass.txt').readlines()
 
 login_field.send_keys(login)
 password_field.send_keys(password)
